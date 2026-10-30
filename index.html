@@ -45,7 +45,7 @@
 
     <style>
         body { margin: 0; overflow: hidden; background-color: #ffffff; color: #0c4a6e; font-family: 'Inter', sans-serif; }
-        #presentation-container { display: flex; width: 1500vw; height: 100vh; transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1); will-change: transform; }
+        #presentation-container { display: flex; width: 1700vw; height: 100vh; transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1); will-change: transform; }
         .slide { width: 100vw; height: 100vh; padding: 4rem 4rem 6rem 4rem; box-sizing: border-box; position: relative; overflow-y: auto; overflow-x: hidden; display: flex; flex-direction: column; }
         .slide::-webkit-scrollbar { display: none; }
         .slide { -ms-overflow-style: none; scrollbar-width: none; }
@@ -769,9 +769,91 @@
         </section>
 
         <!-- ==========================================
-             SLIDE 10: POORER HCI VS IMPROVED HCI
+             SLIDE 10: POSITIVE RESEARCH CASE STUDY
              ========================================== -->
-        <section class="slide bg-slate-50" id="slide-10" data-section="Comparison">
+        <section class="slide bg-brand-50" id="slide-10" data-section="Positive Case Study">
+            <header class="mb-8 slide-up">
+                <span class="text-success-500 font-bold tracking-widest text-sm uppercase">Positive Real-World Case Study • Research Paper</span>
+                <h2 class="text-4xl font-bold text-brand-950 mt-2">User-Centered Design Improves Banking Usability</h2>
+                <p class="text-lg text-brand-700 mt-2">A 2024 study evaluated a mobile banking application and tested a redesigned prototype.</p>
+            </header>
+            <div class="grid grid-cols-2 gap-6 flex-1 slide-up delay-100">
+                <div class="bg-white rounded-2xl border border-brand-100 p-7 shadow-sm">
+                    <div class="text-xs font-bold text-brand-500 uppercase tracking-widest mb-3">Research method</div>
+                    <h3 class="text-2xl font-bold text-brand-900 mb-4">User-Centered Design (UCD)</h3>
+                    <ul class="space-y-3 text-sm text-brand-800">
+                        <li>• Usability testing, interviews and questionnaires.</li>
+                        <li>• Users attempted 10 common mobile-banking task scenarios.</li>
+                        <li>• Feedback was used to decide what to maintain, add, improve or remove.</li>
+                        <li>• Researchers then evaluated a redesigned prototype.</li>
+                    </ul>
+                    <div class="mt-6 bg-brand-50 rounded-xl p-4 border border-brand-100">
+                        <div class="text-xs font-bold text-brand-500 uppercase mb-2">Improvements requested by users</div>
+                        <p class="text-sm text-brand-900">Modern icons and illustrations, e-wallet top-up, easier access to transaction history, share-after-transfer, biometric login and copy-account-number options.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl border border-brand-100 p-7 shadow-sm flex flex-col justify-center">
+                    <div class="text-xs font-bold text-brand-500 uppercase tracking-widest mb-5">Reported task completion</div>
+                    <div class="mb-6">
+                        <div class="flex justify-between items-end mb-2"><span class="font-bold text-brand-900">Existing application</span><span class="text-3xl font-black text-slate-500">90%</span></div>
+                        <div class="h-4 bg-slate-100 rounded-full overflow-hidden"><div class="h-full bg-slate-400 rounded-full" style="width:90%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-end mb-2"><span class="font-bold text-brand-900">Redesigned prototype</span><span class="text-3xl font-black text-success-500">99%</span></div>
+                        <div class="h-4 bg-slate-100 rounded-full overflow-hidden"><div class="h-full bg-success-500 rounded-full" style="width:99%"></div></div>
+                    </div>
+                    <div class="mt-7 bg-success-50 border border-success-200 rounded-xl p-4">
+                        <div class="text-3xl font-black text-success-500">+9 percentage points</div>
+                        <p class="text-sm text-brand-800 mt-1">More participants completed the 10 tasks successfully after the prototype redesign.</p>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-4">This is the study's reported task-success result, not a claim about every banking app.</p>
+                </div>
+            </div>
+            <div class="mt-5 text-xs text-brand-700 font-medium">Research: Sudirjo et al. (2024), <em>Jurnal Informasi dan Teknologi</em>, 6(1), 7–13. DOI: 10.60083/jidt.v6i1.465</div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE 11: NEGATIVE RESEARCH CASE STUDY
+             ========================================== -->
+        <section class="slide" id="slide-11" data-section="Negative Case Study">
+            <header class="mb-7 slide-up">
+                <span class="text-error-500 font-bold tracking-widest text-sm uppercase">Negative Real-World Case Study • Research Paper</span>
+                <h2 class="text-4xl font-bold text-brand-950 mt-2">UPI Apps: Accessibility Barriers for Blind Users</h2>
+                <p class="text-lg text-brand-700 mt-2">A 2024 IEEE study tested Google Pay, PhonePe and Paytm with visually impaired participants in India.</p>
+            </header>
+            <div class="flex gap-6 flex-1 slide-up delay-100">
+                <div class="w-1/3 bg-brand-900 rounded-2xl p-6 text-white flex flex-col justify-center">
+                    <div class="text-brand-300 text-xs font-bold uppercase tracking-widest mb-3">Study sample</div>
+                    <div class="text-6xl font-black mb-2">15</div>
+                    <div class="text-xl font-bold mb-5">visually impaired volunteers</div>
+                    <p class="text-sm text-brand-100 leading-relaxed">Participants used screen readers and attempted realistic payment tasks such as changing a UPI PIN, sending money, mobile recharge and redeeming rewards.</p>
+                    <div class="mt-6 pt-5 border-t border-brand-700 text-sm text-brand-200">Apps evaluated: Google Pay • PhonePe • Paytm</div>
+                </div>
+                <div class="w-2/3 grid grid-cols-2 gap-4">
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-5">
+                        <div class="text-2xl mb-2">🔊</div><h3 class="font-bold text-brand-900 mb-2">Unlabelled controls</h3><p class="text-sm text-brand-800">Screen readers could not identify some buttons, including navigation and help controls.</p>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-5">
+                        <div class="text-2xl mb-2">🧭</div><h3 class="font-bold text-brand-900 mb-2">Complex navigation</h3><p class="text-sm text-brand-800">Participants struggled to locate important options such as “Change UPI PIN” hidden within menus.</p>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-5">
+                        <div class="text-2xl mb-2">⚠️</div><h3 class="font-bold text-brand-900 mb-2">Unclear error feedback</h3><p class="text-sm text-brand-800">Some errors did not explain what went wrong, making recovery difficult for screen-reader users.</p>
+                    </div>
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-5">
+                        <div class="text-2xl mb-2">🖼️</div><h3 class="font-bold text-brand-900 mb-2">Non-text graphics</h3><p class="text-sm text-brand-800">Some graphical elements lacked meaningful text alternatives, so screen readers announced generic labels.</p>
+                    </div>
+                    <div class="col-span-2 bg-brand-50 border border-brand-200 rounded-xl p-5">
+                        <h3 class="font-bold text-brand-900 mb-2">HCI lessons and recommendations</h3><p class="text-sm text-brand-800">Give every control an accessible name, use clear screen-reader announcements, simplify menu hierarchy, provide descriptive error messages and make key actions easy to discover.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 text-xs text-brand-700 font-medium">Research: Singh et al. (2024), “Making Digital Payments Accessible Beyond Sight: A Usability Study of UPI-Based Smartphone Applications,” <em>IEEE Access</em>, 12, 6830–6841. DOI: 10.1109/ACCESS.2023.3348840. Findings relate to the tested participants and tasks.</div>
+        </section>
+
+        <!-- ==========================================
+             SLIDE 12: POORER HCI VS IMPROVED HCI
+             ========================================== -->
+        <section class="slide bg-slate-50" id="slide-12" data-section="Comparison">
             <header class="mb-8 slide-up">
                 <span class="text-brand-500 font-bold tracking-widest text-sm uppercase">Evaluation</span>
                 <h2 class="text-4xl font-bold text-brand-950 mt-2">Poorer HCI vs Improved HCI</h2>
@@ -871,7 +953,7 @@
         <!-- ==========================================
              SLIDE 11: INTERACTION PROCESS & STYLES
              ========================================== -->
-        <section class="slide" id="slide-11" data-section="Interaction">
+        <section class="slide" id="slide-13" data-section="Interaction">
             <header class="mb-12 slide-up">
                 <span class="text-brand-500 font-bold tracking-widest text-sm uppercase">Process</span>
                 <h2 class="text-4xl font-bold text-brand-950 mt-2">Interaction Process & Styles</h2>
@@ -933,7 +1015,7 @@
         <!-- ==========================================
              SLIDE 12: PROTOTYPING EVOLUTION
              ========================================== -->
-        <section class="slide bg-slate-50" id="slide-12" data-section="Prototyping">
+        <section class="slide bg-slate-50" id="slide-14" data-section="Prototyping">
              <header class="mb-8 slide-up">
                 <span class="text-brand-500 font-bold tracking-widest text-sm uppercase">Construction</span>
                 <h2 class="text-4xl font-bold text-brand-950 mt-2">Prototyping Evolution & Tool Support</h2>
@@ -1031,7 +1113,7 @@
         <!-- ==========================================
              SLIDE 13: EVALUATION & DECIDE
              ========================================== -->
-        <section class="slide" id="slide-13" data-section="Evaluation">
+        <section class="slide" id="slide-15" data-section="Evaluation">
              <header class="mb-10 slide-up">
                 <span class="text-brand-500 font-bold tracking-widest text-sm uppercase">Evaluation</span>
                 <h2 class="text-4xl font-bold text-brand-950 mt-2">Evaluation Framework</h2>
@@ -1101,7 +1183,7 @@
         <!-- ==========================================
              SLIDE 14: LIVE INTERACTIVE DEMO
              ========================================== -->
-        <section class="slide bg-slate-50" id="slide-14" data-section="Live Demonstration">
+        <section class="slide bg-slate-50" id="slide-16" data-section="Live Demonstration">
             <header class="mb-4 flex justify-between items-end slide-up">
                 <div>
                     <span class="text-brand-500 font-bold tracking-widest text-sm uppercase">🔥 Live Interaction</span>
@@ -1329,7 +1411,7 @@
         <!-- ==========================================
              SLIDE 15: FUTURE HCI & CONCLUSION
              ========================================== -->
-        <section class="slide items-center justify-center text-center relative bg-gradient-to-t from-brand-50 to-white" id="slide-15" data-section="Conclusion">
+        <section class="slide items-center justify-center text-center relative bg-gradient-to-t from-brand-50 to-white" id="slide-17" data-section="Conclusion">
             <div class="max-w-5xl relative z-10 w-full slide-up">
                 <h2 class="text-5xl font-black text-brand-950 mb-12">Beyond the Screen</h2>
                 
@@ -1439,6 +1521,8 @@
             <ul class="space-y-4 text-sm text-slate-700">
                 <li class="flex gap-3"><span class="text-brand-500 font-bold">1.</span> <span class="font-medium">Mauri Martinez — BofI / Axos Bank Consumer Banking Application Redesign Case Study.</span></li>
                 <li class="flex gap-3"><span class="text-brand-500 font-bold">2.</span> <span class="font-medium">HCI syllabus and core course material provided with the project.</span></li>
+                <li class="flex gap-3"><span class="text-brand-500 font-bold">3.</span> <span class="font-medium">Sudirjo, F. et al. (2024). “Application of The User Centered Design Method To Evaluate the Relationship Between User Experience, User Interface and Customer Satisfaction on Banking Mobile Application.” <em>Jurnal Informasi dan Teknologi</em>, 6(1), 7–13. <a class="text-brand-600 underline" href="https://doi.org/10.60083/jidt.v6i1.465" target="_blank" rel="noopener">https://doi.org/10.60083/jidt.v6i1.465</a></span></li>
+                <li class="flex gap-3"><span class="text-brand-500 font-bold">4.</span> <span class="font-medium">Singh, S. et al. (2024). “Making Digital Payments Accessible Beyond Sight: A Usability Study of UPI-Based Smartphone Applications.” <em>IEEE Access</em>, 12, 6830–6841. <a class="text-brand-600 underline" href="https://doi.org/10.1109/ACCESS.2023.3348840" target="_blank" rel="noopener">https://doi.org/10.1109/ACCESS.2023.3348840</a></span></li>
             </ul>
             <div class="mt-8 bg-brand-50 p-4 rounded-xl border border-brand-100 text-xs font-bold text-brand-800 uppercase tracking-widest text-center">
                 Banking interfaces in the live demonstration are simulated for educational purposes.
@@ -1449,7 +1533,7 @@
     <script>
         // --- State ---
         let currentSlide = 0;
-        const totalSlides = 15;
+        const totalSlides = 17;
         let notesVisible = false;
 
         // --- Presenter Notes ---
@@ -1463,6 +1547,8 @@
             "Let's look at a published UX case study for BofI/Axos Bank. They identified documented usability challenges in their mobile account opening process. We will look at their UX analysis and the redesign.",
             "This is an illustrative reconstruction of the old interface. Notice the documented problems: high cognitive load, too much text, unnecessary fields asked too early, and the primary button pushed below the fold.",
             "This is the redesign. It breaks the process into smaller steps, reduces visual noise, and improves consistency. Based on the published report, median submission time dropped from 15 to 11 minutes—a 33% improvement.",
+            "A 2024 user-centered design study reported that successful completion of 10 mobile-banking task scenarios increased from 90% in the existing application to 99% in the redesigned prototype. The researchers used usability tests, interviews and questionnaires.",
+            "A 2024 IEEE study tested Google Pay, PhonePe and Paytm with 15 visually impaired volunteers. It found barriers including unlabeled buttons, difficult navigation, unclear error messages and screen-reader issues. The lesson is that accessibility must be tested with real users.",
             "Let's compare directly. In a poorer HCI, error handling gives cryptic codes, and cognitive load is high. In an improved HCI, feedback is clear, inline validation is active, and the user remains in control.",
             "Interaction isn't just tapping. It involves direct manipulation, communication from the system, and collaboration. Soon, it will heavily involve expressive command languages and immersive environments.",
             "To build these interfaces, we prototype. We start with wireframes for structure, move to low-fidelity for basic flow, and use tool support like Figma, HTML, and JS to build realistic high-fidelity prototypes for testing.",
